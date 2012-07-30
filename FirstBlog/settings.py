@@ -1,4 +1,5 @@
 # Django settings for FirstBlog project.
+import dj_database_url
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -11,11 +12,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'heroku_11416c2b7a00129',                      # Or path to database file if using sqlite3.
-        'USER': 'b4f94323a5849d',                      # Not used with sqlite3.
-        'PASSWORD': '84fd20e6',                  # Not used with sqlite3.
-        'HOST': 'http://stormy-atoll-9056.herokuapp.com/',                      # Set to empty string for localhost. Not used with sqlite3.
+		dj_database_url.config(default='postgres://localhost')
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
