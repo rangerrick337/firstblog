@@ -12,10 +12,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'firstblog',                      # Or path to database file if using sqlite3.
-        'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': 'sleep',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'NAME': 'heroku_11416c2b7a00129',                      # Or path to database file if using sqlite3.
+        'USER': 'b4f94323a5849d',                      # Not used with sqlite3.
+        'PASSWORD': '84fd20e6',                  # Not used with sqlite3.
+        'HOST': 'http://stormy-atoll-9056.herokuapp.com/',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
